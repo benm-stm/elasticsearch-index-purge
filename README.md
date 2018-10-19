@@ -12,6 +12,8 @@ curl -XPUT -H "Content-Type: application/json" http://localhost:9200/_all/_setti
 
 # how to automate
 You can schedual the script in one of the nodes as it is shown below to only keep the 10 last days having the pattern "logstash-${date}"
+
+for example:
 ```
-00 02 * * * root /usr/local/bin/es-cleanup.sh 127.0.0.1 9200 logstash- 10 > /dev/null 2>&1
+elasticsearch@es-node1:~# echo "00 02 * * * root /usr/local/bin/es-cleanup.sh 127.0.0.1 9200 logstash- 10 > /dev/null 2>&1" >  /etc/cron.d/kisio-elasticsearch
 ```
