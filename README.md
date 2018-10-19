@@ -15,5 +15,5 @@ You can schedual the script in one of the nodes as it is shown below to only kee
 
 for example:
 ```
-elasticsearch@es-node1:~# echo "00 02 * * * root /usr/local/bin/es-cleanup.sh 127.0.0.1 9200 logstash- 10 > /dev/null 2>&1" >  /etc/cron.d/kisio-elasticsearch
+elasticsearch@es-node1:~# echo "00 02 * * * root /usr/local/bin/es-cleanup.sh 127.0.0.1 9200 logstash- 10 > /dev/null 2>&1" >  /etc/cron.d/elasticsearch
 ```
