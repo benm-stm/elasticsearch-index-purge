@@ -1,6 +1,9 @@
 # elasticsearch-index-purge
 a small curator scipt to purge the last x days for a specific index pattern
-
+```
+elasticsearch@es-node1:~# curator_cli --version
+curator_cli, version 5.5.4
+```
 # Some issues
 In case of low disk space the kibana will block write access on the es cluster, to allow write access again just ru the below command
 ```
